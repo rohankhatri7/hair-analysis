@@ -51,7 +51,7 @@ const PaymentPlansSection = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/create-checkout-session', {
+      const response = await axios.post('http://localhost:5050/create-checkout-session', {
         planId: plan.name,
         planAmount: plan.amount,
         planCurrency: 'usd',

@@ -3,6 +3,7 @@ import HeroSection from '../components/HeroSection';
 import { useNavigate } from 'react-router-dom';
 import CompaniesSection from '../components/CompaniesSection';
 import PaymentPlansSection from '../components/PaymentPlanSection';
+import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
 
@@ -12,8 +13,8 @@ const Home: React.FC = () => {
     <div className='min-h-screen bg-gray-900'>
     <Navbar /> 
     <HeroSection />
-    <CompaniesSection />
     <PaymentPlansSection />
+    <Footer />
     </div>
   );
 }
